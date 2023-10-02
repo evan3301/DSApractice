@@ -1,0 +1,68 @@
+python 3.11
+
+-------------------------------------------------------
+# int operators
+-------------------------------------------------------
+
+    2                        # int
+    2.0                      # float
+
+    div /                    # return float
+    div //                   # return int
+    div %                    # return remainder
+
+    exp **                   # exponent operator
+    equal =                  # assign value
+
+    complex num j            # complex / imaginary (eg. 3j)
+
+-------------------------------------------------------
+# text operators
+-------------------------------------------------------
+
+    str built in
+    "" or ''
+
+    \n available
+    triple quote for shell new line
+
+    string operator + * available
+    automatic literal string concatenation (joining) '...' '...' = '...'
+
+    automatic string indexing & slicing
+        word[i]
+        word[i:j] / word[j:k] (from index i to index j , from index j to index k , etc.)
+
+    built in strlen function (len())
+
+--------------------------------------------------------
+# lists
+--------------------------------------------------------
+
+    built in lists
+        s = [1 , 2 , 3 , 4 ...]
+
+    slicing and indexing availability
+    concatenation and operator availability
+    len() function availability
+
+    nesting availablility
+    mutable (changable via index || eg. word[i] = 43)
+
+    append() method availability (adds to end of list || listName.append(value))
+    assignment slices availability (listName[i:j] = ['x' , 'x' , 'x' , ...])
+
+----------------------------------------------------------
+# Fibonacci sequence
+----------------------------------------------------------
+
+a , b = 0 , 1       = multiple assignment
+while a < 10:       = conditional while loop + comparison operator
+    print(a)        = indented body
+    a , b = b , a+b
+
+>>> 0
+>>> 1
+>>> 1
+>>> 2
+>>> 3

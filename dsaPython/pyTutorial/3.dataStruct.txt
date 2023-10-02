@@ -1,0 +1,139 @@
+
+------------------------------------------------------------
+# more on lists
+------------------------------------------------------------
+
+list.append(x)              # add a value to the end of a list
+list.extend(iterable)       # extend list by adding all items from iterable
+list.insert(i , x)          # add x to position i of list
+list.remove(x)              # remove first instance of x from list
+list.pop([i])               # remove item at position i and return it
+a.pop()                     # remove and return last item in list
+list.clear()                # remove all items from list
+list.index(x[, start [, end]])  # remove item x between position start and end
+list.count(x)               # return number of times x appears on list
+list.sort(*, key=None, reverse=False)  # sort items of list in place
+list.reverse()              # reverse elements of list
+list.copy()                 # return shallow copy of list
+
+-----------------------------------------------------------
+# list as stack
+-----------------------------------------------------------
+
+append()            # add to bottom of list
+pop()               # remove from bottom of list
+
+-----------------------------------------------------------
+# list as queue
+-----------------------------------------------------------
+
+collections.deque
+
+deque
+append
+popleft()
+queue
+
+------------------------------------------------------------
+# list comprehensions
+------------------------------------------------------------
+
+squares = [x**2 for x in range(10)]         # shorter , concise way to create list
+
+>>> 1 , 4 , 9 , ...
+
+------------------------------------------------------------
+# deletion
+------------------------------------------------------------
+
+del list[i]         # removes specific index
+del list[i , j]     # removes splice
+del list[:]         # removes whole list
+
+-----------------------------------------------------------
+# tuple
+-----------------------------------------------------------
+
+t = 1234 , 1.234 , hello , c                # stores multiple value types
+
+-----------------------------------------------------------
+# sets
+-----------------------------------------------------------
+
+basket = {'apple' , 'banana' , 'cupon'}        # unordered list with no duplicates , fast bool operation
+'orange' in basket
+
+>>> False
+
+-----------------------------------------------------------
+# dictionaries
+-----------------------------------------------------------
+
+dict = {'Terry' : 4049 , 'Liam' : 4820 , 'Scamp' : 3901}
+dict['Terry']
+
+>>> 4049
+
+-----------------------------------------------------------
+
+dict = {'Terry' : 4049 , 'Liam' : 4820 , 'Scamp' : 3901}         # .items gets key and corresponding value
+for i , j in dict.items():
+    print(i , j)
+
+>>> Terry 4049
+>>> Liam 4820
+>>> Scamp 3901
+
+------------------------------------------------------------
+
+for i , x in enumerate(['Terry' , 'Liam' , 'Scamp'])            # enumerate gets index and value
+    print(i , x)
+
+>>> 0 Terry
+>>> 1 Liam
+>>> 2 Scamp
+
+------------------------------------------------------------
+
+count = ['1' , '2' , '3']
+day = ['Monday' , 'Tuesday' , Wednesday']                       # zip loops over multiple lists
+
+for a , b in zip(count , day):
+    print("It is day {0}: {1}" .format(a , b))
+
+>>> It is day 1: Monday
+>>> It is day 2: Tuesday
+>>> It is day 3: Wednesday
+
+-------------------------------------------------------------
+
+for i in reversed(range(1 , 5 , 2)):                            # reversed iterates range in reverse
+    print i
+
+>>> 5
+>>> 4
+>>> 3
+>>> 1
+
+-------------------------------------------------------------
+
+basket = ['ant' , 'caterpillar' , 'ant' , 'beetle' , 'aphid']           # sorted sorts list
+for i in sorted(basket):
+    print(i)
+
+>>> ant
+>>> ant
+>>> aphid
+>>> beetle
+>>> caterpillar
+
+-------------------------------------------------------------
+
+basket = ['ant' , 'caterpillar' , 'ant' , 'beetle' , 'aphid']           # sorted sorts list
+for i in sorted(set(basket)):
+    print(i)
+
+>>> ant
+>>> aphid
+>>> beetle
+>>> caterpillar

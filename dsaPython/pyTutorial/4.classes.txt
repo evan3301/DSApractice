@@ -1,0 +1,7 @@
+Classes create a new type of object
+    This new type can be referenced in new instances
+        These instances can contain new methods for changing or defining its state
+
+namespaces
+    mod.real    -> real is an attribute of object mod
+
